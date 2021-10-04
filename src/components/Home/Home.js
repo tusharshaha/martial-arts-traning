@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import img1 from '../../images/wepik-202194.png'
+import Service from '../Service/Service';
 import './home.css'
 const Home = () => {
+    const [services, setServices] = useState([])
+    useEffect(()=>{
+        fetch('./service.json')
+        .then(res => res.json())
+        .then(data => setServices(data))
+    },[])
     return (
         <div className='home-section'>
             <Container>
@@ -17,9 +24,15 @@ const Home = () => {
                 </Col>
                 </Row>
                 <div className='text-center my-5'>
-                    <h3 className='fw-bold'>Our <span className='text-danger'>Classes</span></h3>
+                    <h3 className='fw-bold'>Top <span className='text-danger'>Courses</span></h3>
                     <h5 className='text-secondary'><i>Join our martial art club and be healthy</i></h5>
                 </div>
+                <Row xs={1} md={4} className="g-4">
+                    {/* this is top trending courses  */}
+                    {
+                        services?.slice(0,4).map(service => <Service key={service.id} services={service}></Service>)
+                    }
+                </Row>
             </Container>
         </div>
     );

@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.pinimg.com/564x/2b/d8/11/2bd8110ccec41cb8620a0ed5d5d97b72.jpg",
+      "name": "Takewando",
+      "price": 200
+    },
+    {
+      "id": 2,
+      "img": "https://i.pinimg.com/564x/b1/32/3b/b1323bdfc78c321cebedddb0a3391c5a.jpg",
+      "name": "Karate",
+      "price": 300
+    },
+    {
+      "id": 3,
+      "img": "https://i.pinimg.com/564x/32/2b/63/322b6341750f30e6c7606aefe53b4f7a.jpg",
+      "name": "Judo",
+      "price": 100
+    },
+    {
+      "id": 4,
+      "img": "https://i.pinimg.com/564x/bb/0b/47/bb0b47de4bc097aac6a281b95854452a.jpg",
+      "name": "Boxing",
+      "price": 250
+    },
+    {
+      "id": 5,
+      "img": "https://i.pinimg.com/564x/71/6f/d5/716fd5aa6c3947b2be1fb44d10399150.jpg",
+      "name": "Kickboxing",
+      "price": 60
+    },
+    {
+      "id": 6,
+      "img": "https://i.pinimg.com/564x/c5/46/28/c54628563845482e5883b16b8c15bef4.jpg",
+      "name": "Aikido",
+      "price": 80
+    },
+    {
+      "id": 7,
+      "img": "https://i.pinimg.com/564x/9c/c3/d5/9cc3d5be0276929f1a1c3eca51000fab.jpg",
+      "name": "Sumo",
+      "price": 60
+    },
+    {
+      "id": 8,
+      "img": "https://i.pinimg.com/564x/87/64/3e/87643e5da75799f22deb31f12704915f.jpg",
+      "name": "Savate",
+      "price": 50
+    },
+    {
+      "id": 9,
+      "img": "https://i.pinimg.com/564x/5b/82/93/5b829355aa726c727a6c4f5ae564e685.jpg",
+      "name": "Stick-Fighting",
+      "price": 150
+    }
+]
