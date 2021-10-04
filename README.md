@@ -1,6 +1,6 @@
 # Martial Arts Traning
 
-Visit my site for best courses [Martial Arts](https://adoring-bhabha-89dfdd.netlify.app/signin).
+Visit my site for best courses [Martial Arts](https://adoring-bhabha-89dfdd.netlify.app/).
 
 ## Site feature
 * This site About Matial Arts traning
