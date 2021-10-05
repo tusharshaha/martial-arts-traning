@@ -5,7 +5,7 @@ import img2 from '../../images/2411-removebg-preview.png'
 const About = () => {
     return (
         <Container>
-            <div className='w-25 mx-auto mb-5'>
+            <div style={{width:'250px'}} className=' mx-auto mb-5'>
             <Image className='w-100' src={img2}/>
             </div>
             <div>

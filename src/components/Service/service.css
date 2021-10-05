@@ -1,0 +1,5 @@
+.card-animation:hover{
+    transform: translate(0,-10px);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}

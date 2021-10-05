@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='footer-section'>
             <Container className='text-white'>
-            <Row>
+            <Row xs={1} md={2}>
                 <Col className='p-5'>
                     <h3>About Us</h3>
 

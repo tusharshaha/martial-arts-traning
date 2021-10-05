@@ -1,16 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row,Button } from 'react-bootstrap';
+import useServices from '../../Hooks/useServices';
 import img1 from '../../images/wepik-202194.png'
 import Service from '../Service/Service';
 import './home.css'
 const Home = () => {
-    const [services, setServices] = useState([])
-    useEffect(()=>{
-        fetch('./service.json')
-        .then(res => res.json())
-        .then(data => setServices(data))
-    },[])
+    // this is custom hook
+    const [services] = useServices()
     return (
+        <>
+        <div className='header-section'>
+            <div className='overlay'>
+            <Container className='text-white'>
+                <Row className='mt-5'>
+                    <Col>
+                    <h1 className='fw-bold'>Martial Arts</h1>
+                    <h3 className='text-uppercase bg-danger px-3'>Traning With best legend</h3>
+                    <p>Every day we bring hope to millions of chidren in the world's hardes places as a sing of God's unconditonal love</p>
+                    <Button variant="danger mt-3 ">BOOK NOW</Button>
+                    </Col>
+                    <Col></Col>
+                </Row>
+            </Container>
+        </div>
+        </div>
         <div className='home-section'>
             <Container>
                 <Row className='d-flex align-items-center'>
@@ -27,14 +39,42 @@ const Home = () => {
                     <h3 className='fw-bold'>Top <span className='text-danger'>Courses</span></h3>
                     <h5 className='text-secondary'><i>Join our martial art club and be healthy</i></h5>
                 </div>
-                <Row xs={1} md={4} className="g-4">
+                <Row xs={1} md={4} className="g-4 pb-5">
                     {/* this is top trending courses  */}
                     {
                         services?.slice(0,4).map(service => <Service key={service.id} services={service}></Service>)
                     }
                 </Row>
             </Container>
+            {/* review section  */}
+            <div className="bg-danger my-5 px-4 py-5 text-white">
+                <Container>
+                    <Row xs={2} md={4} className='text-center g-4'>
+                        <Col>
+                        <i className="far fa-smile icon"></i>
+                        <h3>754</h3>
+                        <small>HAPPY STUDENT</small>
+                        </Col>
+                        <Col>
+                        <i className="fas fa-rocket icon"></i>
+                        <h3>375</h3>
+                        <small>SUCCESS SPORTS</small>
+                        </Col>
+                        <Col>
+                        <i className="fas fa-user-plus icon"></i>
+                        <h3>124</h3>
+                        <small>OUR TRANINER</small>
+                        </Col>
+                        <Col>
+                        <i className="fas fa-medal icon"></i>
+                        <h3>24</h3>
+                        <small>AWARD WON</small>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
         </div>
+        </>
     );
 };
 

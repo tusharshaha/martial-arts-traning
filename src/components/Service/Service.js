@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, Col,Button } from 'react-bootstrap';
-
+import './service.css'
 const Service = (props) => {
     const {img, name,price}= props.services
     return (
         <Col>
-            <Card>
-                <Card.Img variant="top" src={img} style={{height:'150px'}}/>
+            <Card className='card-animation'>
+                <Card.Img variant="top" src={img} style={{height:'250px', width:'100%'}}/>
                 <Card.Body>
                 <Card.Title>{name}</Card.Title>
                     <h5>${price}</h5>
